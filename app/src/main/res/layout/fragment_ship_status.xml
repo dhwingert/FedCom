@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/shipStatusFragmentView">
+
+    <TextView
+        android:id="@+id/shipStatusdTitleTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:textSize="20sp"
+        style="@style/ViewBorder"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/shipStatusDisplay"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            style="@style/ViewBorder"
+            android:text="@string/list_no_units_in_game"
+            android:id="@+id/shipStatusEmptyView"/>
+    </FrameLayout>
+
+    <!--<ListView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="0px"-->
+    <!--android:layout_weight="1"-->
+    <!--style="@style/ViewBorder"-->
+    <!--android:id="@+id/shipListView"/>-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            style="@style/NiceButtonGreen"
+            android:text="@string/button_return_to_fed_com"
+            android:id="@+id/shipStatusReturnButton"/>
+    </LinearLayout>
+
+</LinearLayout>

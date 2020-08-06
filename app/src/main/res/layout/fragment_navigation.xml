@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/aboutView">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/NiceButtonGreenRelWidth"
+            android:text="@string/button_energy_alloc"
+            android:id="@+id/energyAllocButton"/>
+        <Button
+            style="@style/NiceButtonGreenRelWidth"
+            android:text="@string/button_ship_status"
+            android:id="@+id/shipStatusButton"/>
+        <Button
+            style="@style/NiceButtonGreenRelWidth"
+            android:text="@string/button_enemy_status"
+            android:id="@+id/enemyStatusButton"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/turnLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/moveLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/shipStatusLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <FrameLayout
+        android:id="@+id/hexMapDisplay"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+        <SurfaceView
+            android:id="@+id/hexMapSurfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/NiceButtonGreenRelWidth"
+            android:text="@string/button_left_turn"
+            android:id="@+id/moveLeftTurnButton"/>
+        <Button
+            style="@style/NiceButtonGreenRelWidth"
+            android:text="@string/button_left_slip"
+            android:id="@+id/moveLeftSlipButton"/>
+        <Button
+            style="@style/NiceButtonGreenRelWidth"
+            android:text="@string/button_go_straight"
+            android:id="@+id/moveStraightButton"/>
+        <Button
+            style="@style/NiceButtonGreenRelWidth"
+            android:text="@string/button_right_slip"
+            android:id="@+id/moveRightSlipButton"/>
+        <Button
+            style="@style/NiceButtonGreenRelWidth"
+            android:text="@string/button_right_turn"
+            android:id="@+id/moveRightTurnButton"/>
+    </LinearLayout>
+
+</LinearLayout>

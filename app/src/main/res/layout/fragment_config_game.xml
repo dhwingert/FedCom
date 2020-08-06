@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/configGameView">
+
+    <TextView
+        android:id="@+id/configGameTitleTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:text="@string/fragment_config_game"
+        android:textSize="20sp"
+        style="@style/ViewBorder"
+        />
+
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        style="@style/ViewBorder"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <Spinner
+                    android:id="@+id/configGameTypeSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_span="2"
+                    android:imeOptions="actionNext"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/LabelForEditText16"
+                    android:text="@string/config_label_game_name"
+                    />
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="20"
+                    android:imeOptions="actionNext"
+                    android:text="Star Fleet Battles"
+                    android:inputType="textCapWords|textPersonName"
+                    android:id="@+id/configGameNameEditText"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/LabelForEditText16"
+                    android:text="@string/config_label_phases"
+                    />
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:imeOptions="actionNext"
+                    android:text="32"
+                    android:id="@+id/configImpulsesEditText"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/LabelForEditText16"
+                    android:text="@string/config_label_perm"
+                    />
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="4"
+                    android:imeOptions="actionNext"
+                    android:text="Ship"
+                    android:inputType="textCapWords|textPersonName"
+                    android:id="@+id/configPermLabelEditText"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/LabelForEditText16"
+                    android:text="@string/config_label_has_temp"
+                    />
+                <CheckBox
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:checked="true"
+                    android:id="@+id/configHasTempCheckBox"
+                    />
+            </TableRow>
+
+            <TableRow android:id="@+id/configTempLabelRow">
+                <TextView
+                    style="@style/LabelForEditText16"
+                    android:text="@string/config_label_temp"
+                    />
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="4"
+                    android:imeOptions="actionNext"
+                    android:text="Seek"
+                    android:inputType="textCapWords|textPersonName"
+                    android:id="@+id/configTempLabelEditText"
+                />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/LabelForEditText16"
+                    android:text="@string/config_label_has_init_order"
+                    />
+                <CheckBox
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:checked="true"
+                    android:id="@+id/configHasInitOrderCheckBox"
+                    />
+            </TableRow>
+
+            <TableRow android:id="@+id/configInitLabelRow">
+                <TextView
+                    style="@style/LabelForEditText16"
+                    android:text="@string/config_label_initiative"
+                    />
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="4"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords|textPersonName"
+                    android:id="@+id/configInitiativeLabelEditText"
+                    />
+            </TableRow>
+
+            <TableRow android:id="@+id/configInitIsNumRow">
+                <TextView
+                    style="@style/LabelForEditText16"
+                    android:text="@string/config_label_init_is_num"
+                    />
+                <CheckBox
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:checked="true"
+                    android:id="@+id/configInitIsNumCheckBox"
+                    />
+            </TableRow>
+
+            <TableRow android:id="@+id/configInitListRow1">
+                <TextView
+                    style="@style/LabelForEditText16"
+                    android:text="@string/config_label_init_list"
+                    />
+            </TableRow>
+            <TableRow android:id="@+id/configInitListRow2">
+                <EditText
+                    android:layout_span="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:maxLength="50"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords|textPersonName"
+                    android:id="@+id/configInitiativeListEditText"
+                    />
+            </TableRow>
+
+            <TableRow android:id="@+id/configDefaultInitRow">
+                <TextView
+                    style="@style/LabelForEditText16"
+                    android:text="@string/config_label_default_init"
+                    />
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="4"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:id="@+id/configDefaultInitEditText"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/LabelForEditText16"
+                    android:text="@string/config_label_1st_move_order"
+                    />
+                <Spinner
+                    android:id="@+id/config1stMoveOrderSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    style="@android:style/Widget.EditText"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/LabelForEditText16"
+                    android:text="@string/config_label_2nd_move_order"
+                    />
+                <Spinner
+                    android:id="@+id/config2ndMoveOrderSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:imeOptions="actionDone"
+                    style="@android:style/Widget.EditText"
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <Button
+        style="@style/NiceButtonGreen"
+        android:text="@string/button_start_turn"
+        android:id="@+id/configStartGameButton"/>
+
+</LinearLayout>

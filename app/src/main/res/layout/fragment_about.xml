@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/aboutView">
+
+    <FrameLayout
+        android:id="@+id/aboutDisplay"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+        <SurfaceView
+            android:id="@+id/hexMapSurfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:text="@string/app_name"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="-6dp"
+                    android:textColor="@color/LightGrey"
+                    android:text="@string/app_description"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/LightGrey"
+                    android:text="@string/app_authors"/>
+
+                <TextView
+                    android:id="@+id/versionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/LightGrey"
+                    android:text="@string/app_name"/>
+            </LinearLayout>
+
+            <!--<TextView-->
+                <!--android:id="@+id/text"-->
+                <!--android:text="@string/app_name"-->
+                <!--android:visibility="visible"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:textColor="#88ffffff"-->
+                <!--android:textSize="24sp"/>-->
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <Button
+        style="@style/NiceButtonGreen"
+        android:text="@string/button_start_fed_com"
+        android:id="@+id/gotoHexMapButton"/>
+
+    <Button
+        style="@style/NiceButtonGreen"
+        android:text="@string/button_start_turn"
+        android:id="@+id/aboutResumeButton"/>
+
+    <Button
+        style="@style/NiceButtonRed"
+        android:text="@string/button_delete_game"
+        android:id="@+id/deleteGameButton"/>
+
+</LinearLayout>

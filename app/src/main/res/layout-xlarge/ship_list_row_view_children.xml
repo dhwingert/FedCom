@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/shipListIdTextView"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/playerNameTextView"
+            android:layout_weight="3"
+            android:layout_width="0px"
+            style="@style/LabelForEditText16"
+            />
+
+        <TextView
+            android:id="@+id/shipListTypeTextView"
+            android:layout_width="50dp"
+            style="@style/LabelForEditText16"
+            />
+
+        <TextView
+            android:id="@+id/shipListNameTextView"
+            android:layout_weight="3"
+            android:layout_width="0px"
+            style="@style/LabelForEditText16"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/LabelForEditText16"
+            android:id="@+id/shipListInitLblTextView"
+            />
+
+        <TextView
+            android:id="@+id/shipListInitValTextView"
+            android:layout_width="50dp"
+            style="@style/LabelForEditText16"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/LabelForEditText16"
+            android:text="@string/label_speed"
+            />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:inputType="numberSigned"
+            android:maxLength="3"
+            android:textSize="16sp"
+            android:imeOptions="actionNext"
+            android:id="@+id/shipListSpeedEditText"
+            />
+
+        <TextView
+            android:id="@+id/shipListAddedTextView"
+            android:layout_weight="4"
+            android:layout_width="0px"
+            style="@style/LabelForEditText16"
+            android:layout_marginLeft="30dp"
+            />
+
+    </LinearLayout>
+</merge>

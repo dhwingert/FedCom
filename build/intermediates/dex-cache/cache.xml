@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\AndroidStudioSDK\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\AndroidStudioWorkspace\dhwingert\FedCom\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-21.0.3_a6f3c928bf4ae3b7fa1316f3ef03165df05b91bc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\AndroidStudioWorkspace\dhwingert\FedCom\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\AndroidStudioWorkspace\dhwingert\FedCom\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_24800799cdcd9a9167a78bbcc7794a3f0d093d52\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\.android\build-cache\c584e308eed278c990d4880402be442d2153e6f1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\AndroidStudioWorkspace\dhwingert\FedCom\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0e302eb688c6c55ca565e95441676ba1e78cdbc7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\AndroidStudioWorkspace\dhwingert\FedCom\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dc13e532a065ec44c78ad482ad6235fdfcd4f9d9">
+        <dex dex="C:\AndroidStudioWorkspace\dhwingert\FedCom\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_67b4bcfeb68b7640ffe072087e88d79cc11c420e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\.android\build-cache\c584e308eed278c990d4880402be442d2153e6f1\output\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\AndroidStudioWorkspace\dhwingert\FedCom\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-21.0.3_b41a2cf43d16d9782c8ee1174e91c66fb0a133ba\classes.dex" />
+    </item>
+
+</items>

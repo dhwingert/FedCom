@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/playerListFragmentView">
+
+    <TextView
+        android:id="@+id/playerListTitleTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:text="@string/fragment_player_list"
+        android:textSize="20sp"
+        style="@style/ViewBorder"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        style="@style/ContainerOfEditTextAndButtonBorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerListAddPlayerLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/LabelForEditText16"
+            android:layout_height="fill_parent"
+            android:text="@string/label_add_player"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/addPlayerEditText"
+            android:imeOptions="actionDone"
+            android:hint="@string/hint_name"
+            style="@style/EditTextUnderline"
+            android:inputType="textCapWords|textPersonName"/>
+
+        <ImageButton
+            android:id="@+id/addPlayerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:layout_gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@android:drawable/ic_input_add">
+        </ImageButton>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center"
+        style="@style/ViewBorder"
+        android:text="@string/list_no_players"
+        android:id="@+id/playerListEmptyView"/>
+
+    <com.dhwingert.fedcom.util.DragNDropListView
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        style="@style/ViewBorder"
+        android:id="@+id/playersListView"/>
+
+    <Button
+        style="@style/NiceButtonGreen"
+        android:text="@string/button_start_game"
+        android:id="@+id/playersStartGameButton"/>
+
+</LinearLayout>

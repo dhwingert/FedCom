@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/historyImpulseTextView">
+
+    <TextView
+        android:id="@+id/impulseDetailTitleTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:textSize="20sp"
+        style="@style/ViewBorder"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            style="@style/ViewBorder">
+
+            <TextView
+                android:id="@+id/impulseDetailPausedTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/NiceBtnRedStartColor"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="@string/title_paused_units"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/list_no_units_paused"
+                android:id="@+id/impulsePausedShipsEmptyView"/>
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/pausedShipsListView"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/ViewBorder">
+
+            <TextView
+                android:id="@+id/impulseDetailMovingTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/NiceBtnGreenStartColor"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="@string/title_moving_units"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/list_no_units_move"
+                android:id="@+id/impulseMovingShipsEmptyView"/>
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/movingShipsListView"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        style="@style/NiceButtonGreen"
+        android:text="@string/button_next_phase"
+        android:id="@+id/nextImpulseButton"/>
+
+
+</LinearLayout>

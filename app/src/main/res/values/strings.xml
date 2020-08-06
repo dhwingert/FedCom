@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Federation Commander</string>
+    <string name="app_description">Cadet Training - Solo Missions</string>
+    <string name="app_authors">By: Hall of Daves</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Move Tracker Fragments -->
+    <string name="fragment_config_game">Game Settings</string>
+    <string name="fragment_player_list">Player List</string>
+    <string name="fragment_player_details">Player Details -</string>
+    <string name="fragment_history">History -</string>
+    <string name="fragment_unit_list">Unit List -</string>
+    <string name="fragment_phase_chart">Movement -</string>
+
+    <!-- Combat Sim Fragments -->
+    <string name="fragment_energy_allocation">Energy Allocation</string>
+    <string name="fragment_ship_status">Ship Status</string>
+    <string name="fragment_enemy_status">Enemy Status</string>
+
+    <string name="title_moving_units">Moving Units</string>
+    <string name="title_paused_units">Not Moving Units</string>
+
+    <string name="label_add_player">Add Player:</string>
+    <string name="label_player_name">Player:</string>
+    <string name="label_unit_name">Unit:</string>
+    <string name="label_speed">Speed:</string>
+    <string name="label_speed_short">S:</string>
+    <string name="label_added">Added:</string>
+
+    <string name="list_no_players">No players added to game yet.</string>
+    <string name="list_no_units_for_player">No units added to this player yet.</string>
+    <string name="list_no_units_in_game">No units added to any players yet.</string>
+    <string name="list_no_history">Game not started yet.</string>
+    <string name="list_no_units_move">No units move this phase.</string>
+    <string name="list_no_units_paused">All units move this phase.</string>
+
+    <string name="no_player_name">{No name}</string>
+
+    <string name="menuitem_about">About</string>
+    <string name="menuitem_delete_player">Delete Player</string>
+    <string name="menuitem_show_players">Players</string>
+    <string name="menuitem_show_units">Units</string>
+    <string name="menuitem_show_history">History</string>
+
+    <string name="turn_number_prefix">Turn:</string>
+    <string name="turn_phase_prefix">Phase:</string>
+    <string name="turn_planning_suffix">Planning</string>
+    <string name="turn_new_game">New Game</string>
+    <string name="turn_add_players">Add Players</string>
+    <string name="turn_start_game">Start Game</string>
+    <string name="turn_start_prefix">Start -</string>
+    <string name="turn_resume_prefix">Resume -</string>
+
+    <string name="button_save_player">Save Player</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_add_unit">Add</string>
+    <string name="button_start_game">Start Game</string>
+    <string name="button_start_turn">Start Turn</string>
+    <string name="button_next_turn">Next Turn</string>
+    <string name="button_next_phase">Next Phase</string>
+    <string name="button_resume_planning">Resume Planning</string>
+    <string name="button_delete_game">New Game</string>
+    <string name="button_return_to_players">Return to Player List</string>
+    <string name="button_return_movement">Return to Movement Chart</string>
+    <string name="button_start_turn_1">Start Turn: 1</string>
+    <string name="button_start_fed_com">Start Fed Com Training</string>
+    <string name="button_return_to_fed_com">Return to Fed Com Training</string>
+
+    <string name="button_left_turn">left</string>
+    <string name="button_left_slip">!-</string>
+    <string name="button_go_straight">!</string>
+    <string name="button_right_slip">-!</string>
+    <string name="button_right_turn">right</string>
+    <string name="button_energy_alloc">energy</string>
+    <string name="button_ship_status">ship</string>
+    <string name="button_enemy_status">enemy</string>
+
+    <string name="hint_name">Player Name</string>
+    <string name="hint_unitName">Name</string>
+
+    <string name="confirm_delete_player_title">Are You Sure?</string>
+    <string name="confirm_delete_player_message">This will permanently delete the player.</string>
+    <string name="confirm_new_game_title">Are You Sure?</string>
+    <string name="confirm_new_game_message">This will permanently delete the current game.</string>
+    <string name="ok">OK</string>
+
+    <string name="message_add_player_error">You must enter a player name</string>
+    <string name="message_add_unit_error">Unit name is required.</string>
+    <string name="message_save_worked">Save successful!</string>
+    <string name="message_unit_speed_error">Speed cannot be higher than phases in turn.</string>
+    <string name="message_start_game_no_units">Can not start game until there are players which have units.</string>
+    <string name="message_start_turn_invalid_speeds">Can not start turn until all units have valid speeds.</string>
+    <string name="message_version_not_found">Version not found!</string>
+
+    <string name="perm_count_prefix">Ship:</string>
+    <string name="shuttle_count_prefix">Shuttles:</string>
+    <string name="drone_count_prefix">Drones:</string>
+    <string name="temp_count_prefix">Seek:</string>
+
+    <string name="config_label_game_name">Name of game:</string>
+    <string name="config_label_phases">Moves per Turn:</string>
+    <string name="config_label_perm">Permanent units label:</string>
+    <string name="config_label_has_temp">Game has temp units:</string>
+    <string name="config_label_temp">Temporary units label:</string>
+    <string name="config_label_has_init_order">Game has initiative:</string>
+    <string name="config_label_initiative">Initiative label:</string>
+    <string name="config_label_init_is_num">Initiative is numeric:</string>
+    <string name="config_label_init_list">Initiative values:</string>
+    <string name="config_label_default_init">Default Initiative:</string>
+    <string name="config_label_1st_move_order">Primary move order:</string>
+    <string name="config_label_2nd_move_order">Secondary move order:</string>
+
+    <string name="unit_speed">Speed</string>
+
+    <string name="spinner_title_phase_details">Calculating Moves</string>
+    <string name="spinner_msg_phase_details">Moving...</string>
+
+    <string name="config_error_game_name">Game Config Name must be specified.</string>
+    <string name="config_error_phases">Moves per turn must be a number between 1 and 99.</string>
+    <string name="config_error_perm_label">Permanent unit label required.</string>
+    <string name="config_error_temp_label">Temporary unit label required when there are both permanent and temporary units.</string>
+    <string name="config_error_init_label">Initiative order label required when using initiative order.</string>
+    <string name="config_error_init_list">Initiative list must be a comma separated list of labels which are no more than 4 characters each.</string>
+    <string name="config_error_init_list_len_0">Blank labels are not allowed in Initiative list.</string>
+    <string name="config_error_init_list_len_4">Labels of length greater than 4 characters are not allowed in Initiative list.</string>
+    <string name="config_error_def_init_blank">Default Initiative required when using initiative order.</string>
+    <string name="config_error_def_init_num">Default Initiative must be a number, 0 or above.</string>
+    <string name="config_error_def_init_not_in_list">Default Initiative must be in list of Initiative List.</string>
+
+    <string name="game_type_custom">Custom</string>
+    <string name="game_type_hero">Champions</string>
+    <string name="game_type_d20">d20 RPG</string>
+    <string name="game_type_sfb">Star Fleet Battles</string>
+    <string name="game_type_fc">Federation Commander</string>
+
+    <string name="sfb_perm_label">Ship</string>
+    <string name="sfb_temp_label">Seek</string>
+    <string name="sfb_move_order_label">Mode</string>
+    <string name="sfb_init_list">Seek,Shtl,AA,A,B,C,D,E,F</string>
+    <string name="sfb_default_init">B</string>
+
+    <string name="hero_perm_label">Char</string>
+    <string name="hero_temp_label">Smnd</string>
+    <string name="hero_move_order_label">Dex</string>
+    <string name="hero_init_list"></string>
+
+    <string name="d20_perm_label">Char</string>
+    <string name="d20_temp_label">Smnd</string>
+    <string name="d20_move_order_label">Init</string>
+    <string name="d20_init_list"></string>
+
+    <string-array name="game_type_array">
+        <item>Custom Game Settings</item>
+        <item>Champions</item>
+        <item>d20 RPG</item>
+        <item>Star Fleet Battles</item>
+        <item>Federation Commander</item>
+    </string-array>
+
+    <string-array name="move_order_array">
+        <item>Low Speed First</item>
+        <item>High Speed First</item>
+        <item>Low Initiative First</item>
+        <item>High Initiative First</item>
+        <item>None</item>
+    </string-array>
+
+    <string name="power_warp_label">Warp</string>
+    <string name="power_reactor_label">Reactor</string>
+    <string name="power_impulse_label">Impulse</string>
+    <string name="power_battery_label">Battery</string>
+    <string name="power_total_label">Power Pool</string>
+
+    <string name="system_status_destroyed_label">Destroyed</string>
+    <string name="system_status_remaining_label">Active</string>
+    <string name="system_status_used_label">Used</string>
+    <string name="system_status_unused_label">Unused</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,14 @@
+The icons in this ZIP file were downloaded from http://icons4android.com 
+
+All icons are licensed under Creative Commons Attribution-Non-Commercial 3.0 Netherlands (http://creativecommons.org/licenses/by-nc/3.0/nl/deed.en_GB)
+Please note that one condition of this license is attribution. 
+
+If you use these icons in your project(s), you must add a link to 
+
+http://somerandomdude.com/work/iconic/
+
+on your website or playstore site. 
+
+Example of correct attribution: 
+
+ App icons by <a href="http://somerandomdude.com/work/iconic/">P.J. Onori</a>.

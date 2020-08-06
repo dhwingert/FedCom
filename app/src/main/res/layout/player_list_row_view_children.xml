@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/movePlayerImageView"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_menu_moreoverflow_normal_holo_light"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/playerIdTextView"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/playerNameTextView"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            style="@style/LabelForEditText14"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/playerPermLblTextView"
+            style="@style/LabelForEditText10"
+            android:layout_width="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/playerPermCountTextView"
+            style="@style/LabelForEditText10"
+            android:layout_width="30dp"
+            />
+
+        <TextView
+            android:id="@+id/playerTempLblTextView"
+            style="@style/LabelForEditText10"
+            android:layout_width="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/playerTempCountTextView"
+            style="@style/LabelForEditText10"
+            android:layout_width="30dp"
+            />
+
+    </LinearLayout>
+</merge>

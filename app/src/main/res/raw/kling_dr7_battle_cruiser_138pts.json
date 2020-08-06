@@ -1,0 +1,175 @@
+{
+  "shipClass": "Battle Cruiser",
+  "className": "D7",
+  "pointValue": 138,
+  "empire": "Klingon",
+  "damageControl": 4,
+  "probes": 5,
+  "marines": 14,
+  "frameDamage": 4,
+  "turnMode": "B",
+  "moveCost": 1,
+  "accelerationCost": 1,
+  "decelerationCost": 1,
+  "highEnergyTurnCost": 5,
+  "evasiveManeuverCost": 6,
+  "shuttlecraftCount": 2,
+  "shields": [
+    {
+      "direction": 1,
+      "count": 30
+    },
+    {
+      "direction": 2,
+      "count": 22
+    },
+    {
+      "direction": 3,
+      "count": 22
+    },
+    {
+      "direction": 4,
+      "count": 22
+    },
+    {
+      "direction": 5,
+      "count": 22
+    },
+    {
+      "direction": 6,
+      "count": 22
+    }
+  ],
+  "power": {
+    "warpPower": [
+      {
+        "type": "left",
+        "count": 15
+      },
+      {
+        "type": "right",
+        "count": 15
+      }
+    ],
+    "impulsePower": [
+      {
+        "count": 5
+      }
+    ],
+    "reactorPower": [
+      {
+        "count": 4
+      }
+    ],
+    "batteryPower": [
+      {
+        "count": 3
+      }
+    ]
+  },
+  "hull": [
+    {
+      "type": "forward",
+      "count": 4
+    },
+    {
+      "type": "rear",
+      "count": 7
+    }
+  ],
+  "controlRooms": [
+    {
+      "type": "bridge",
+      "count": 2
+    },
+    {
+      "type": "emergencyBridge",
+      "count": 1
+    },
+    {
+      "type": "auxiliaryControl",
+      "count": 2
+    }
+  ],
+  "weapons": [
+    {
+      "type": "phaser",
+      "subType": "1",
+      "count": 3,
+      "arcs": ["fx"]
+    },
+    {
+      "type": "phaser",
+      "subType": "2",
+      "count": 1,
+      "arcs": ["lf","l","rr"]
+    },
+    {
+      "type": "phaser",
+      "subType": "2",
+      "count": 1,
+      "arcs": ["rf","r","lr"]
+    },
+    {
+      "type": "phaser",
+      "subType": "2",
+      "count": 2,
+      "arcs": ["l","lr"]
+    },
+    {
+      "type": "phaser",
+      "subType": "2",
+      "count": 2,
+      "arcs": ["r","rr"]
+    },
+    {
+      "type": "disruptor",
+      "count": 2,
+      "arcs": ["fa"]
+    },
+    {
+      "type": "disruptor",
+      "count": 2,
+      "arcs": ["fa"]
+    },
+    {
+      "type": "drone",
+      "subType": "z",
+      "count": 2
+    },
+    {
+      "type": "probe",
+      "count": 1
+    }
+  ],
+  "systems": [
+    {
+      "type": "laboratory",
+      "count": 4
+    },
+    {
+      "type": "transporter",
+      "count": 1
+    },
+    {
+      "type": "transporter",
+      "count": 2
+    },
+    {
+      "type": "transporter",
+      "count": 2
+    },
+    {
+      "type": "tractorBeam",
+      "count": 1
+    },
+    {
+      "type": "tractorBeam",
+      "count": 1
+    },
+    {
+      "type": "shuttlebay",
+      "count": 2
+    }
+  ]
+}

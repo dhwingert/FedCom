@@ -1,0 +1,176 @@
+{
+  "shipClass": "Heavy Cruiser",
+  "pointValue": 147,
+  "empire": "Federation",
+  "damageControl": 4,
+  "probes": 5,
+  "marines": 10,
+  "frameDamage": 6,
+  "turnMode": "D",
+  "moveCost": 1,
+  "accelerationCost": 1,
+  "decelerationCost": 1,
+  "highEnergyTurnCost": 5,
+  "evasiveManeuverCost": 6,
+  "shuttlecraftCount": 4,
+  "shields": [
+    {
+      "direction": 1,
+      "count": 30
+    },
+    {
+      "direction": 2,
+      "count": 24
+    },
+    {
+      "direction": 3,
+      "count": 24
+    },
+    {
+      "direction": 4,
+      "count": 24
+    },
+    {
+      "direction": 5,
+      "count": 24
+    },
+    {
+      "direction": 6,
+      "count": 24
+    }
+  ],
+  "power": {
+    "warpPower": [
+      {
+        "type": "left",
+        "count": 15
+      },
+      {
+        "type": "right",
+        "count": 15
+      }
+    ],
+    "impulsePower": [
+      {
+        "count": 4
+      }
+    ],
+    "reactorPower": [
+      {
+        "count": 2
+      }
+    ],
+    "batteryPower": [
+      {
+        "count": 2
+      },
+      {
+        "count": 2
+      }
+    ]
+  },
+  "hull": [
+    {
+      "type": "forward",
+      "count": 6
+    },
+    {
+      "type": "forward",
+      "count": 6
+    },
+    {
+      "type": "rear",
+      "count": 2
+    },
+    {
+      "type": "rear",
+      "count": 2
+    }
+  ],
+  "controlRooms": [
+    {
+      "type": "bridge",
+      "count": 2
+    },
+    {
+      "type": "emergencyBridge",
+      "count": 2
+    },
+    {
+      "type": "auxiliaryControl",
+      "count": 2
+    }
+  ],
+  "weapons": [
+    {
+      "type": "phaser",
+      "subType": "1",
+      "count": 2,
+      "arcs": ["lf","l"]
+    },
+    {
+      "type": "phaser",
+      "subType": "1",
+      "count": 2,
+      "arcs": ["rf","r"]
+    },
+    {
+      "type": "phaser",
+      "subType": "1",
+      "count": 2,
+      "arcs": ["fh"]
+    },
+    {
+      "type": "photonTorpedo",
+      "count": 4,
+      "arcs": ["fa"]
+    },
+    {
+      "type": "phaser",
+      "subType": "3",
+      "count": 1,
+      "arcs": ["360"]
+    },
+    {
+      "type": "phaser",
+      "subType": "3",
+      "count": 1,
+      "arcs": ["360"]
+    },
+    {
+      "type": "drone",
+      "subType": "z",
+      "count": 1
+    },
+    {
+      "type": "probe",
+      "count": 1
+    }
+  ],
+  "systems": [
+    {
+      "type": "laboratory",
+      "count": 4
+    },
+    {
+      "type": "laboratory",
+      "count": 4
+    },
+    {
+      "type": "transporter",
+      "count": 2
+    },
+    {
+      "type": "transporter",
+      "count": 1
+    },
+    {
+      "type": "tractorBeam",
+      "count": 2
+    },
+    {
+      "type": "shuttlebay",
+      "count": 4
+    }
+  ]
+}

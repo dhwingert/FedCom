@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:state_pressed="true" >
+    <shape>
+        <gradient
+            android:endColor="@color/NiceBtnRedStartColor"
+            android:startColor="@color/NiceBtnRedEndColor"
+            android:angle="270" />
+        <stroke
+            android:width="1dp"
+            android:color="@color/NiceBtnBorderColor" />
+        <corners
+            android:radius="3dp" />
+        <padding
+            android:left="0dp"
+            android:top="8dp"
+            android:right="0dp"
+            android:bottom="8dp" />
+    </shape>
+</item>
+
+<item android:state_focused="true" >
+    <shape>
+        <gradient
+            android:startColor="@color/NiceBtnRedStartColor"
+            android:endColor="@color/NiceBtnRedEndColor"
+            android:angle="270" />
+        <stroke
+            android:width="1dp"
+            android:color="@color/NiceBtnBorderColor" />
+        <corners
+            android:radius="3dp" />
+        <padding
+            android:left="0dp"
+            android:top="8dp"
+            android:right="0dp"
+            android:bottom="8dp" />
+    </shape>
+</item>
+
+<item android:state_enabled="false">
+    <shape>
+        <gradient
+            android:startColor="@color/NiceBtnDisabledStartColor"
+            android:endColor="@color/NiceBtnDisabledEndColor"
+            android:angle="270" />
+        <stroke
+            android:width="1dp"
+            android:color="@color/NiceBtnBorderColor" />
+        <corners
+            android:radius="3dp" />
+        <padding
+            android:left="0dp"
+            android:top="8dp"
+            android:right="0dp"
+            android:bottom="8dp" />
+    </shape>
+</item>
+
+<item>
+    <shape>
+        <gradient
+            android:startColor="@color/NiceBtnRedStartColor"
+            android:endColor="@color/NiceBtnRedEndColor"
+            android:angle="270" />
+        <stroke
+            android:width="1dp"
+            android:color="@color/NiceBtnBorderColor" />
+        <corners
+            android:radius="3dp" />
+        <padding
+            android:left="0dp"
+            android:top="8dp"
+            android:right="0dp"
+            android:bottom="8dp" />
+    </shape>
+</item>
+</selector>

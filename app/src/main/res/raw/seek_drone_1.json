@@ -1,0 +1,9 @@
+{
+  "type": "drone",
+  "subType": "1",
+  "empire": "Federation",
+  "damage": 4,
+  "warhead": 12,
+  "speed": 20,
+  "turnMode": "D"
+}

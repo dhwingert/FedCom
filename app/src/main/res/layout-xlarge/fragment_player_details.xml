@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/playerDetailsView">
+
+    <TextView
+        android:id="@+id/playerDetailTitleTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:textSize="20sp"
+        style="@style/ViewBorder"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        style="@style/ContainerOfEditTextAndButtonBorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/playerUnitTypeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            style="@android:style/Widget.EditText"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/addUnitNameEditText"
+            android:imeOptions="actionDone"
+            android:hint="@string/hint_unitName"
+            style="@style/EditTextUnderline"
+            android:inputType="textCapWords|textPersonName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/LabelForEditText16"
+            android:id="@+id/playerUnitInitLblTextView"
+            android:layout_marginLeft="20dp"/>
+
+        <Spinner
+            android:id="@+id/playerUnitInitSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            style="@android:style/Widget.EditText"
+            />
+
+        <EditText
+            android:id="@+id/playerUnitInitEditText"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2"
+            android:imeOptions="actionNext"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/LabelForEditText16"
+            android:text="@string/label_speed"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:maxLength="3"
+            android:id="@+id/playerUnitSpeedEditText"
+            />
+
+        <TextView
+            android:id="@+id/playerDetailsTurnTextView"
+            android:layout_width="wrap_content"
+            style="@style/LabelForEditText16"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <ImageButton
+            android:id="@+id/addShipButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:layout_gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_input_add">
+        </ImageButton>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center"
+        style="@style/ViewBorder"
+        android:text="@string/list_no_units_for_player"
+        android:id="@+id/playerShipListEmptyView"/>
+
+    <com.dhwingert.fedcom.util.DragNDropListView
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        style="@style/ViewBorder"
+        android:id="@+id/unitsListView"/>
+
+    <Button
+        style="@style/NiceButtonGreen"
+        android:text="@string/button_return_to_players"
+        android:id="@+id/playerDetailsReturnButton"/>
+
+</LinearLayout>
